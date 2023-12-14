@@ -5,7 +5,7 @@ import (
 	"slices"
 )
 
-func main() {
+func Main7() {
 	var s []string // slices are intialized with len 0 and contains nothing => nil
 	fmt.Println(s, len(s) == 0, s == nil)
 

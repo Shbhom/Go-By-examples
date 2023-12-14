@@ -14,17 +14,26 @@ func add(x, y int) int {
 }
 
 //multi-value return function
-
 func multiReturn(x, y int) (int, string) {
 	Type := reflect.TypeOf(x).String()
 	return x * y, Type
 }
 
-func main() {
+// variadic functions
+func variadicFunc(nums ...int) {
+	fmt.Println("len of variadic arguments", len(nums))
+	for _, ele := range nums {
+		fmt.Print(ele)
+	}
+	fmt.Println()
+}
+
+func Main10() {
 	fmt.Println(mult(1, 2))
 	fmt.Println(add(1, 2))
-	fmt.Println(multiReturn(1, 2))
-
-	value, _ := multiReturn(1, 2)
-	fmt.Println(value)
+	fmt.Println("multiValued Return")
+	value, Ty := multiReturn(1, 2)
+	fmt.Println(value, Ty)
+	fmt.Println("variadic Function")
+	variadicFunc(1, 2, 3, 4, 5)
 }

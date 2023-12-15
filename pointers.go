@@ -4,20 +4,20 @@ import (
 	"fmt"
 )
 
-type person struct {
-	name string
-	age  int
-}
+// type person struct {
+// 	name string
+// 	age  int
+// }
 
-func makePerson() *person {
-	m := person{"shubhom", 20}
-	fmt.Printf("%p\n", &m)
-	return &m
-}
+// func makePerson() *person {
+// 	m := person{"shubhom", 20}
+// 	fmt.Printf("%p\n", &m)
+// 	return &m
+// }
 
-func main() {
+func Main13() {
 	//do display the use of heap in mem allocation
-	fmt.Printf("%p\n", makePerson())
+	// fmt.Printf("%p\n", makePerson())
 	x, y := 1, 2
 	//here the address is not changing because we are printing the addresses of x and y and not the actual address
 	fmt.Printf("before swap %d,%d,%p,%p \n", x, y, &x, &y)

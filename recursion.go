@@ -12,10 +12,6 @@ func Facto(x int) int {
 
 // return nth fibo term
 func fibo(x int) int {
-	// if x == 0 {
-	// 	return 0
-	// } else if x == 1 || x == 2 {
-	// 	return 1
 	if x < 2 {
 		return x
 	} else {
